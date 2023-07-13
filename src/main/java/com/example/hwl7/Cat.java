@@ -17,14 +17,14 @@ public class Cat {
     }
 
     public void fullCat(boolean full) {
-        if(!satiety){
-            if(full){
-                satiety=true;
+        if (!satiety) {
+            if (full) {
+                satiety = true;
                 System.out.println("Кот " + name + " сыт");
-            }else {
+            } else {
                 System.out.println("Для кота " + name + " еды не достаточно");
             }
-        }else {
+        } else {
             System.out.println("Кот " + name + " сыт");
         }
         Plate.info();

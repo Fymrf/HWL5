@@ -8,8 +8,8 @@ public class Plate {
     }
 
     public boolean decreaseFood(int n) {
-        if (food>=0 &&food<=10){
-            food+=50;
+        if (food >= 0 && food <= 10) {
+            food += 50;
             System.out.printf("Тарелка пополнена, теперь в ней %s еды\n\n", food);
         }
         if (n <= food) {
@@ -21,6 +21,6 @@ public class Plate {
     }
 
     public static void info() {
-        System.out.println("plate: " + food+'\n');
+        System.out.println("plate: " + food + '\n');
     }
 }
