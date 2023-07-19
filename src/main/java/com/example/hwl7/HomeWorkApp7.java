@@ -17,17 +17,19 @@ package com.example.hwl7;
 
 public class HomeWorkApp7 {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("A", 5, false);
-        Cat cat2 = new Cat("B", 100, false);
-        Cat cat3 = new Cat("C", 20, false);
-        Cat cat4 = new Cat("D", 70, false);
-        Cat cat5 = new Cat("E", 10, false);
+        Cat[] cats = new Cat[6];
+        cats[0] = new Cat("A", 5, false);
+        cats[1] = new Cat("B", 5, true);
+        cats[2] = new Cat("C", 100, false);
+        cats[3] = new Cat("D", 20, false);
+        cats[4] = new Cat("E", 70, false);
+        cats[5] = new Cat("F", 10, false);
+
         Plate plate = new Plate(100);
 
-        cat1.eat(plate);
-        cat2.eat(plate);
-        cat3.eat(plate);
-        cat4.eat(plate);
-        cat5.eat(plate);
+        for(int i =0; i<cats.length; i++)
+        {
+            cats[i].eat(plate);
+        }
     }
 }

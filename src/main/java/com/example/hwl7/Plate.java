@@ -7,13 +7,22 @@ public class Plate {
         this.food = food;
     }
 
-    public boolean decreaseFood(int n) {
-        if (food >= 0 && food <= 10) {
-            food += 50;
-            System.out.printf("Тарелка пополнена, теперь в ней %s еды\n\n", food);
+    public void decreaseFood(int n) {
+        food -= n;
+        //addFood();
+    }
+
+    public void addFood() {
+        food += 50;
+        System.out.printf("Тарелка пополнена, теперь в ней %s еды\n\n", food);
+    }
+
+    public boolean checkFood(int app) {
+        if (food >= 0 && food <= 10)
+        {
+            addFood();
         }
-        if (n <= food) {
-            food -= n;
+        if (app <= food) {
             return true;
         } else {
             return false;
